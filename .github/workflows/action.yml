@@ -38,7 +38,7 @@ jobs:
           region: us-east-1
 
       - name: SAM test
-         run |
+         run: 
           cd ./tests && python -m pytest            		
 
       - name: SAM build and deploy
