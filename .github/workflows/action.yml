@@ -36,12 +36,14 @@ jobs:
         with:
           template: template.yaml
           region: us-east-1
-
+          config: samconfig.toml
    
       - name: Run python unit tests
         uses: Debabrata1980/python-test@master
 
       - name: SAM build and deploy
         uses: Debabrata1980/sam-deploy@master
-
-
+        with:
+          template: template.yaml
+          region: us-east-1
+          config: samconfig.toml
