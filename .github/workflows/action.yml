@@ -45,5 +45,5 @@ jobs:
         uses: Debabrata1980/sam-deploy@master
         with:
           template: template.yaml
-          region: 'us-east-1'
-          config: 'samconfig.toml'
+          region: us-east-1
+          config: samconfig.toml
